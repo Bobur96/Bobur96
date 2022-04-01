@@ -1,0 +1,239 @@
+*{margin: 0; padding: 0; box-sizing: border-box; user-select: none; user-zoom: none;}
+
+.root {
+    width: 100vw;
+    height: 10vh;
+}
+
+.inp-div input {
+    margin: 4vw;
+    width: 20vw;
+    height: 2.2vw;
+    font-size: 1.2vw;
+    text-align: center;
+    outline: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.calendar {
+    width: 32vw;
+    height: 85vh;
+    position: absolute;
+    top: 7.5vh;
+    left: 34vw;
+    background-color: white;
+    border-radius: 0.6vw;
+}
+
+.header {
+    background-color: rgb(99, 81, 219);
+    padding: 1vw;
+    border-radius: 0.6vw 0.6vw 0 0;
+}
+
+.header p:nth-child(1) {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+
+.month-year {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 2.2vw;
+    margin-top: 1.5vh;
+}
+
+.button-show-year {
+    margin-left: -4vw;
+    margin-top: -0.5vh;
+    cursor: pointer;
+    padding-left: 0.7vw;
+    padding-top: 0.8vh;
+    font-weight: bold;
+    font-family: Algerian;
+}
+
+.button-transform {
+    transform-origin: 75%;
+    transform: rotate(180deg);
+    
+}
+
+.content {
+    padding: 1vw;
+}
+
+.change-year-month {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.change-year-month div {
+    display: flex;
+    flex-direction: row;
+}
+
+.change-year-month div .button-change-month {
+    margin-left: 2.5vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Algerian;
+}
+
+.change-year-month div p {
+    font-size: 1.5vw;
+    margin-right: 4vw;
+}
+
+.change-year-month input {
+    outline: none;
+    text-align: center;
+    border: none;
+}
+
+.weekday {
+    width: 32vw;
+    padding: 0.8vw 1.9vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.weekday p {
+    color: rgb(70, 68, 68);
+    font-size: 1.5vw;
+}
+
+.days {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.weekdays-days {
+    position: absolute;  
+    z-index: 10;
+    background-color: white; 
+    height: 25vw;
+}
+
+
+
+.change {
+    z-index: 1!important;
+}
+
+.days div {
+    width: 2.5vw;
+    height: 2.5vw;
+    line-height: 2.5vw;
+    margin-left: 2.06vw;
+    margin-top: 2vh;
+    text-align: center;  
+    font-size: 1.2vw;   
+    border-radius: 1.25vw;
+    cursor: pointer;
+}
+
+
+.days div:nth-child(1),
+.days div:nth-child(8),
+.days div:nth-child(15),
+.days div:nth-child(22),
+.days div:nth-child(29),
+.days div:nth-child(36) {
+    margin-left: 1.2vw!important;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.select-day {
+    background-color: #3c44cf;
+    color: white;
+}
+
+.footer .ok {
+    position: absolute;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:rgb(24, 10, 117);
+    font-size: 1.4vw;
+    bottom: 1vw;
+    right: 2vw;
+    background-color: white;
+}
+
+.footer .cancel {
+    position: absolute;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    color:rgb(24, 10, 117);
+    font-size: 1.4vw;
+    bottom: 1vw;
+    right: 8vw;
+}
+
+
+.days-years {
+    position: relative;
+}
+
+.years {
+    position: absolute;
+    z-index: 5;
+    width: 32vw;
+    height: 24vw;
+    background-color: white;  
+    display: grid;
+    grid-template-columns: 6vw 6vw 6vw;
+    justify-content: space-around;
+    align-items: center; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.years div {
+    text-align: center;
+    padding: 0.4vw;
+    font-size: 1.2vw;
+}
+
+.date-time-input input {
+    margin: 5vw;
+    outline: none;
+    width: 15vw;
+    height: 2vw;
+    padding-left: 1vw;
+    cursor: pointer;
+}
+
+.month-name {
+    width: 4vw;
+}
+
+.background-year {
+    background-color: rgb(97, 80, 207);
+    border-radius: 2vw;
+    color: white;
+}

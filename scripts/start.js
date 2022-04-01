@@ -1,0 +1,1 @@
+loadScript('./app/index.js', () => { generatePage(root, generatePageFuncs)  });
